@@ -7,6 +7,7 @@ let subcription = "https://www.googleapis.com/youtube/v3/subscriptions?"
 
 const videoCard = document.getElementById("video-container");
 const subcripe = document.getElementById("subcription");
+const search1 =document.getElementById("search");
 
 
 (async function get() {
@@ -81,12 +82,17 @@ const makevideo = (data) => {
 
 const search = document.getElementById('search');
 const searchbtn = document.getElementById('searchbtn');
-let searchlink = "https://www.youtube.com/results?search_query=html";
+let searchlink = "https://www.youtube.com/results?search_query=";
+
 
 searchbtn.addEventListener('click', (e) => {
-    if (search.value.length ) {
+    if (search.value.length) {
         location.href = searchlink + search.value;
     }
 })
-
+search1.addEventListener('keypress', (e) => {
+    if (e.key == "Enter") {
+        location.href = searchlink + search.value;
+    }
+})
 

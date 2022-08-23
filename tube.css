@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+/* navbar */
+
+.navigation-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: black;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 50px;
+  background-color: white;
+  overflow-y: auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.nav-link span {
+  padding: 0 15px;
+  vertical-align: bottom;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+.nav-footer {
+  padding-right: 30px;
+  padding-left: 1rem;
+}
+
+.nav-link {
+  padding: 0;
+  padding-right: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* base  */
+
+.chip-container {
+  position: fixed;
+  left: 250px;
+  top: 60px;
+  width: calc(100% - 250px);
+  height: 50px;
+  background: rgb(245, 245, 245);
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.chip-container::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid #dbdbdb;
+  text-transform: capitalize;
+  margin-right: 10px;
+  color: black;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.chip.active {
+  background: black;
+  color: white;
+}
+#video-container {
+  margin-top: 115px;
+  position: relative;
+  object-fit: cover;
+  overflow-x: hidden;
+}
+/* Base */
+
+.page-content {
+  margin-left: 250px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.card-video h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.card-video div {
+  color: black;
+  font-size: 13px;
+}
+
+.card-video-details img {
+  border-radius: 50%;
+}
+
+.text-dark {
+  color: black;
+}
+

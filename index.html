@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+
+    <link rel="stylesheet" href="tube.css">
+    <link type="images/png" rel="icon" href="Images/Youtube3.png">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!--header-->
+    <div class="navigation-bar bg-white navbar-dark">
+        <div class="container-fluid">
+            <div class="d-flex flew-wrap align-items-center justify-content-md-between p-1">
+                <div class="col d-flex align-items-center col-md-auto">
+                    <i class="fa-solid fa-bars"></i>
+                    <img src="Images/youtube.png" width="120" class="ms-2" alt="placeholder">
+                </div>
+                <div class="col col-md-6 col-lg-5 d-none d-md-flex align-items-center justify-content-center">
+                    <div class="input-group flex-nowrap col-10" style="width:90%">
+                        <input type="text" class="form-control rounded-0" placeholder="Search" id="search">
+                        <button class="input-group-text px-3 rounded-0" id="searchbtn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="ms-2">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </div>
+                <ul class="nav col-md-auto">
+                    <li>
+                        <a href="#" class="nav-link px-2">
+                            <img src="Images/Create.png" width="25" alt="Create">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">
+                            <img src="Images/Notification.png" width="25" alt="Notification">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2 mb-2">
+                            <img src="Images/Ajith.jpg" width="32" height="32" class="rounded-circle me-2" alt="user">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+
+
+    <!--Sidebar-->
+    <div class="sidebar">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <img src="Images/explore.png" width="24" height="24" alt="explore">
+                    <span>Explore</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <i class="fa-solid fa-video"></i>
+                    <span>Shorts</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <img src="Images/Subcrip.png" width="24" height="24" id="subcription" alt="explore">
+                    <span>Subscriptions</span>
+                </a>
+            </li>
+
+            <hr>
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    <span>Library</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>History</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <i class="fa-solid fa-video"></i>
+                    <span>Your Videos</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Watch Later</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>Liked Videos</span>
+                </a>
+            </li>
+            <hr>
+            <li class="nav-item">
+                <div class="nav-link p-0 text-dark">
+                    <span class="text-uppercase">More From YOUTUBE</span>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>Youtube Premium</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Gaming</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <img src="Images/Signal.png" width="25" height="25" alt="live">
+                    <span>Live</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <img src="Images/Cub.png" width="25" height="25" alt="cub">
+                    <span>Sports</span>
+                </a>
+            </li>
+
+
+            <hr>
+
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <i class="fa-solid fa-flag"></i>
+                    <span>Youtube Premium</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <img src="Images/Help.png" width="25" height="25" alt="Help">
+                    <span>Help</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center nav-link text-dark">
+                    <img src="Images/Feed.png" width="25" height="25" alt="feedback">
+                    <span>Send feedback</span>
+                </a>
+            </li>
+
+        </ul>
+
+
+        <hr>
+        <ul class="nav nav-footer mb-3">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">Press</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">Copyright</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">Creators</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">Advertise</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">Developers</a>
+            </li>
+        </ul>
+
+        <hr>
+        <ul class="nav nav-footer mb-3">
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Terms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Privacy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Policy & safety</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">How Youtube works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Test new features</a>
+            </li>
+        </ul>
+
+
+        <hr>
+        <ul class="nav nav-footer mb-3">
+            <li class="nav-item">
+                <a class="nav-link fw-light text-dark" href="#">© 2022 Google LLC</a>
+            </li>
+        </ul>
+
+    </div>
+    <!--Sidebar-->
+
+
+    <!--pagecontent-->
+
+    <div class="page-content">
+        <div class="chip-container">
+            <div class="chip active">All</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">Computer Science</div>
+            <div class="chip">Comedy</div>
+            <div class="chip">Music</div>
+            <div class="chip">Tablet Computers</div>
+            <div class="chip">Gadgets</div>
+            <div class="chip">Live</div>
+            <div class="chip">Cricket</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">Guvi</div>
+            <div class="chip">Python</div>
+            <div class="chip">Flipkart</div>
+            <div class="chip">Amazon</div>
+            <div class="chip">HRMS</div>
+            <div class="chip">Instagram</div>
+            <div class="chip">Whatsapp</div>
+        </div>
+        <div class="container-fluid p-5 py-3">
+            <div class="row" id="video-container">
+                <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="Images/Minions.jpg" class="img-fluid" alt="Minions">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="Images/Minions 2.jpg" width="40" alt="">
+                            </div>
+                            <div>
+                                <h4>Build simple web environment for html, css & javascript...</h4>
+                                <div>CodeWithEase</div>
+                                <div>10M views • 3 Months ago</div>
+                                <div>
+                                    <i class="fab fa-youtube"></i>
+                                    <button>subcription</button>
+                                </div> -->
+                              
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--pagecontent-->
+
+
+
+
+    <script src="https://use.fontawesome.com/a66050356f.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+
+</html>
